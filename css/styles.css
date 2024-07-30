@@ -1,14 +1,14 @@
 /*Generale*/
-:root{
+:root {
     --rojo: #E50914;
     --blanco: #ffffff;
     --negro: #000000;
     --grisOscuro: #292727;
     --fuentePB: font-family: "Bebas Neue", sans-serif;
-                     font-weight: 400;
-                     font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 
-        
+
     --fuenteNetflix: font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -21,75 +21,103 @@ html {
 }
 
 body {
-     font-size: 16px;
+    font-size: 16px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.contenedor{
+.contenedor {
     max-width: 90%;
     margin: 0 auto;
 }
 
-/*Header*/
-
-.header{
-    font-family: "Oswald", sans-serif;
+.background {
     background-image: url(../img/background.jpeg);
-    background-size:cover ;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 70rem;  
+    height: 70rem;
 }
 
-.logo__imagen{
-    display: block;
-    margin: 0 auto;
-    width: 10rem;
+/*Header*/
+
+.header {
+    font-family: "Oswald", sans-serif;
 }
 
 .barra{
     display: flex;
     flex-basis: 100%;
     align-items: center;
-    
 }
-.logo{ 
+
+.logo {
     flex: 1;
 }
-.navegacion{
+
+.logo__imagen {
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+}
+
+.navegacion {
     display: flex;
+}
+
+.navegacion__enlace {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.formulario__campo {
+    background-color: transparent;
+    border: 1px solid var(--blanco);
+    padding: .5rem;
+}
+
+.navegacion {
     justify-content: center;
     gap: 2rem;
     flex: 3;
 }
 
-.navegacion__enlace{
-    color: var(--blanco);
-    text-decoration: none;
-}
 
-.formulario{
+
+.formulario {
     flex: 1;
 }
 
-.formulario__campo{
+.formulario__campo {
     display: block;
     margin: 0 auto;
-    background-color: transparent;
-    border: 1px solid var(--blanco);
     width: 80%;
-    padding: .5rem;
 }
 
 
 
+/*Contenido Principal*/
+.informacion__imagen {
+    width: 2rem;
+}
 
+@media (max-width: 768px ) {
+   .barra{
+    flex-direction: column;
+   }
 
+   .navegacion{
+    margin-bottom: 3rem;
+   }
 
-
+   .formulario__campo{
+    width: 100%;
+   }
+}
