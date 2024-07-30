@@ -1,0 +1,95 @@
+/*Generale*/
+:root{
+    --rojo: #E50914;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --grisOscuro: #292727;
+    --fuentePB: font-family: "Bebas Neue", sans-serif;
+                     font-weight: 400;
+                     font-style: normal;
+
+        
+    --fuenteNetflix: font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+     font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+.header{
+    font-family: "Oswald", sans-serif;
+    background-image: url(../img/background.jpeg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    height: 70rem;  
+}
+
+.logo__imagen{
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+}
+
+.barra{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    
+}
+.logo{ 
+    flex: 1;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex: 3;
+}
+
+.navegacion__enlace{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.formulario{
+    flex: 1;
+}
+
+.formulario__campo{
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid var(--blanco);
+    width: 80%;
+    padding: .5rem;
+}
+
+
+
+
+
+
+
