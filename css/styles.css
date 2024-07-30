@@ -43,7 +43,9 @@ img {
     background-image: url(../img/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70rem;
+    min-height: 100vh; 
+    width: 100%;
+    background-position: center center;
 }
 
 /*Header*/
@@ -52,10 +54,10 @@ img {
     font-family: "Oswald", sans-serif;
 }
 
-.barra{
+.barra {
     display: flex;
     flex-basis: 100%;
-    align-items: center;
+    align-items:center;
 }
 
 .logo {
@@ -98,26 +100,86 @@ img {
 .formulario__campo {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
+}
+
+@media (max-width:468px) {
+    .barra {
+        flex-direction: column;
+        
+    }
+
+    .navegacion {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .barra {
+        flex-direction: column;
+        
+    }
+
+    .navegacion {
+        margin-bottom: 3rem;
+    }
+
+    .formulario {
+        width: 100%;
+    }
 }
 
 
 
 /*Contenido Principal*/
-.informacion__imagen {
-    width: 2rem;
+
+.descripcion {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: var(--blanco);
 }
 
-@media (max-width: 768px ) {
-   .barra{
-    flex-direction: column;
-   }
+.descripcion__imagen {
+    width: 4rem;
+}
 
-   .navegacion{
-    margin-bottom: 3rem;
-   }
+.serie{
+    margin-top: -7rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
 
-   .formulario__campo{
-    width: 100%;
+.serie__titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+@media (min-width:468px ) {
+   .serie__titulo{
+    font-size: 7rem;
    }
+}
+
+@media (min-width: 768px) {
+    .descripcion {
+        margin: 20rem 0 0 14rem;
+    }
+
+    .serie {
+        margin: -9rem 0 0 15rem;
+    }
+
+    .serie__titulo{
+        font-size: 10rem;
+    }
 }
