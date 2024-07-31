@@ -111,6 +111,7 @@ h1{
 .formulario__campo::placeholder{
     padding-left: 2rem;
     color: var(--blanco);
+    opacity: 70%;
 }
 
 @media (max-width:468px) {
