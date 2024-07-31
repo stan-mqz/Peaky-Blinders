@@ -215,3 +215,20 @@ h1{
     background-color: var(--negro);
     
 }
+
+.reproducir{
+    margin-top: 2rem;
+
+}
+    
+.reproducir__enlace{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 200;
+    text-decoration: none;
+}
+
