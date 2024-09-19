@@ -92,11 +92,10 @@ h1{
     display: flex;
     align-items: center;
     flex: 2;
+    position: relative;
 }
 
-.formulario__icono{
-    margin-right: -8rem;
-}
+
 
 .formulario__campo {
     display: block;
@@ -108,10 +107,31 @@ h1{
     padding: .5rem;
 }
 
+.formulario__icono{
+    position: absolute;
+    right: 3.5rem;
+    top: 23%;
+}
+
+
+
 .formulario__campo::placeholder{
-    padding-left: 2rem;
+    
     color: var(--blanco);
     opacity: 70%;
+}
+
+
+.formulario__limpiar{
+    position: absolute;
+    margin: 0;
+    color: var(--blanco);
+    left: 31rem;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
 }
 
 @media (max-width:468px) {
