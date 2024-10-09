@@ -1,6 +1,6 @@
 # Netflix Clone
 
-[Live Demo](https://stan-mqz.github.io/Peaky-Blinders/)
+[Live Demo](https://stan-mqz-peaky-blinders-landingpage.netlify.app/)
 
 This is a static webpage inspired by Netflix, showcasing a series called *Peaky Blinders*. The project features a responsive layout, some interactive elements, and is built with HTML, CSS, and JavaScript.
 
